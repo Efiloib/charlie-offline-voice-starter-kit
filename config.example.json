@@ -1,0 +1,12 @@
+{
+  "ollama_url": "http://127.0.0.1:11434",
+  "chat_model": "REPLACE_WITH_LOCAL_MODEL",
+  "whisper_executable": "C:\\path\\to\\whisper-cli.exe",
+  "whisper_model": "C:\\path\\to\\whisper-model.bin",
+  "piper_executable": "C:\\path\\to\\piper.exe",
+  "piper_model": "C:\\path\\to\\voice.onnx",
+  "record_seconds": 8,
+  "temperature": 0.2,
+  "max_reply_tokens": 120,
+  "tools_enabled": false
+}
