@@ -1,10 +1,13 @@
 param([switch]$RuntimeCheck)
 $ErrorActionPreference = 'Stop'
 $forbiddenExtensions = @('.exe','.dll','.bin','.onnx','.wav','.mp3','.zip','.7z','.key','.pem')
-$badFiles = Get-ChildItem -LiteralPath $PSScriptRoot -Recurse -File | Where-Object { $forbiddenExtensions -contains $_.Extension.ToLowerInvariant() }
+$releaseFiles = Get-ChildItem -LiteralPath $PSScriptRoot -Recurse -File | Where-Object {
+  $_.FullName -notmatch '[\\/]\.git([\\/]|$)' -and $_.Name -ne 'config.local.json'
+}
+$badFiles = $releaseFiles | Where-Object { $forbiddenExtensions -contains $_.Extension.ToLowerInvariant() }
 if ($badFiles) { throw "Forbidden release artifacts: $($badFiles.FullName -join ', ')" }
 $patterns = @('BEGIN PRIVATE KEY','api[_-]?key\s*[:=]','password\s*[:=]','bearer\s+[A-Za-z0-9._-]+','C:\\Users\\(?!path\\)')
-$textFiles = Get-ChildItem -LiteralPath $PSScriptRoot -Recurse -File
+$textFiles = $releaseFiles
 $scannedFiles = $textFiles | Where-Object { $_.Name -ne 'Verify-Release.ps1' }
 foreach ($file in $scannedFiles) {
   $text = Get-Content -Raw -LiteralPath $file.FullName
