@@ -24,6 +24,8 @@ Early public release. It provides reproducible validation and setup scaffolding,
 
 See `DEMO.md` for a non-destructive demonstration and `TESTING.md` for the clean-copy test procedure.
 
+![Validated clean-copy demonstration](docs/demo-terminal.svg)
+
 The included launcher is intentionally conservative: push-to-talk by default, loopback-only services, no purchasing or messaging tools, and no automatic external actions.
 
 ## What this kit does not promise
