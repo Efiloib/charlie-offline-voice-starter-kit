@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+  <title id="title">Offline Voice Assistant Starter Kit validation</title>
+  <desc id="desc">Terminal-style rendering of the verified environment and clean-copy tests.</desc>
+  <rect width="960" height="360" rx="14" fill="#0d1117"/>
+  <circle cx="28" cy="25" r="7" fill="#ff5f56"/><circle cx="52" cy="25" r="7" fill="#ffbd2e"/><circle cx="76" cy="25" r="7" fill="#27c93f"/>
+  <g fill="#c9d1d9" font-family="Consolas,monospace" font-size="18">
+    <text x="26" y="70" fill="#58a6ff">PS&gt; .\Test-Environment.ps1</text>
+    <text x="26" y="104">PowerShell   True</text><text x="260" y="104">Ollama   True</text>
+    <text x="26" y="138" fill="#7ee787">Environment inspection complete. No settings changed.</text>
+    <text x="26" y="190" fill="#58a6ff">PS&gt; .\Test-CleanCopy.ps1</text>
+    <text x="26" y="224" fill="#7ee787">PASS: release audit (18 content files checked)</text>
+    <text x="26" y="258">Created config.local.json with tools disabled.</text>
+    <text x="26" y="292" fill="#7ee787">PASS: isolated clean-copy validation</text>
+    <text x="26" y="330" fill="#8b949e">Local-first. No bundled credentials, models, or recordings.</text>
+  </g>
+</svg>
