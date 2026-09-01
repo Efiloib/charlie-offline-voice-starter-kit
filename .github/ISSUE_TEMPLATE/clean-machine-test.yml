@@ -1,0 +1,23 @@
+name: Clean-machine test report
+description: Share a privacy-safe result from a separate Windows environment.
+title: "[Clean test]: "
+labels: [testing]
+body:
+  - type: input
+    id: windows
+    attributes:
+      label: Windows edition and version
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result
+      options: [Passed, Passed with warnings, Failed]
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Sanitized notes
+      description: Do not include usernames, paths, credentials, recordings, or private configuration.
