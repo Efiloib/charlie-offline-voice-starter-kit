@@ -1,8 +1,6 @@
 name: Windows readiness pilot
 description: "Express interest in one 45-minute offline-assistant readiness session; no payment is accepted during validation."
 title: "[Pilot interest]: "
-labels:
-  - pilot-interest
 body:
   - type: markdown
     attributes:
