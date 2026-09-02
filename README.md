@@ -13,6 +13,14 @@ This publication candidate contains no model weights, installers, credentials, p
 
 Early public release. It provides reproducible validation and setup scaffolding, but deliberately does not bundle third-party executables or models.
 
+## Seven-day Windows readiness pilot
+
+We are validating demand for one narrowly scoped, 45-minute Windows offline-assistant readiness session at a future pilot price of **$35**. The validation period accepts expressions of interest only: no payment is requested or accepted, and submitting the form does not guarantee selection.
+
+If you have a Windows machine and want help assessing whether local speech recognition, local language models, and local speech synthesis are practical on it, [submit the public readiness pilot form](../../issues/new?template=pilot-readiness.yml).
+
+The form asks only for Windows version, basic hardware, timezone, and the desired outcome. Do not include credentials, addresses, private recordings, account information, or sensitive file paths.
+
 ## Quick start
 
 1. Run `powershell -NoProfile -ExecutionPolicy Bypass -File .\Test-Environment.ps1`.

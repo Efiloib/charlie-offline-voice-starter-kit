@@ -1,0 +1,53 @@
+name: Windows readiness pilot
+description: "Express interest in one 45-minute offline-assistant readiness session; no payment is accepted during validation."
+title: "[Pilot interest]: "
+labels:
+  - pilot-interest
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public, seven-day demand-validation form for a future 45-minute readiness session at a stated pilot price of $35. Do not include credentials, addresses, recordings, payment details, private paths, or other sensitive information. Submission does not guarantee selection and no payment is requested or accepted now.
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      description: "Example: Windows 11 24H2. Do not include usernames or device identifiers."
+      placeholder: "Windows 10 or 11, version if known"
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Basic hardware
+      description: "CPU, installed RAM, and GPU if known. Do not paste a full diagnostic report."
+      placeholder: "CPU; RAM; GPU or integrated graphics"
+    validations:
+      required: true
+  - type: input
+    id: timezone
+    attributes:
+      label: Timezone
+      description: "General timezone only; do not provide an address."
+      placeholder: "America/Los_Angeles or Pacific Time"
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: "What would you want to learn from a 45-minute readiness session?"
+      placeholder: "I want to know whether this machine can run local transcription and a small local model."
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I understand this issue is public and I have not included sensitive information.
+          required: true
+        - label: I understand no payment is requested or accepted during this validation phase.
+          required: true
+        - label: I understand submission does not guarantee selection or compatibility.
+          required: true
