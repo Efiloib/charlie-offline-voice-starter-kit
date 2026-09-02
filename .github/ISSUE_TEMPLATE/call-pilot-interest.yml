@@ -1,0 +1,49 @@
+name: Opt-in project support call pilot
+description: "Express interest in a short, manual project conversation; do not post contact or payment information."
+title: "[Call pilot interest]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This public form records interest only. Do not post your phone number, email address, location, credentials, payment information, or other sensitive data. No call or payment is authorized by submitting it.
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Main topic of interest
+      options:
+        - Running an offline assistant on Windows
+        - Local speech recognition or speech synthesis
+        - Local model performance and hardware
+        - Supporting open-source development
+        - General project feedback
+    validations:
+      required: true
+  - type: textarea
+    id: interest
+    attributes:
+      label: What would you like to discuss?
+      description: "Keep this general and non-sensitive. Do not include contact information."
+      placeholder: "I would like to discuss whether my Windows hardware is suitable and how the project could improve setup guidance."
+    validations:
+      required: true
+  - type: input
+    id: timezone
+    attributes:
+      label: General timezone
+      description: "Timezone only; do not provide an address or exact location."
+      placeholder: "Pacific Time or America/Los_Angeles"
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent and boundaries
+      options:
+        - label: I understand this issue is public and contains no contact, payment, or sensitive information.
+          required: true
+        - label: I am interested in a future manual call, but understand this form alone does not authorize or schedule one.
+          required: true
+        - label: I understand any project support discussed would be voluntary and is not represented as tax-deductible.
+          required: true
+        - label: I understand no payment is requested or accepted through this form.
+          required: true

@@ -21,6 +21,12 @@ If you have a Windows machine and want help assessing whether local speech recog
 
 The form asks only for Windows version, basic hardware, timezone, and the desired outcome. Do not include credentials, addresses, private recordings, account information, or sensitive file paths.
 
+## Opt-in project support call pilot
+
+We are also testing whether people want a short, manual call about the open-source project and ways to support its continued development. Calls are **opt-in only**—no cold calling, robocalls, AI-generated calling, purchased lists, or scraped phone numbers.
+
+[Express interest through the public call-pilot form](../../issues/new?template=call-pilot-interest.yml). Do not post a phone number or other private contact information. A submission records interest only; it does not authorize an immediate call, request payment, or guarantee follow-up.
+
 ## Quick start
 
 1. Run `powershell -NoProfile -ExecutionPolicy Bypass -File .\Test-Environment.ps1`.
